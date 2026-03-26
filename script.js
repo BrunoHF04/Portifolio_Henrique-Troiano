@@ -252,7 +252,7 @@ document.addEventListener('mouseleave', () => {
 });
 document.addEventListener('mouseenter', () => {
     cursorDot.style.opacity = '1';
-    cursorGlow.style.opacity = '1';
+    cursorGlow.style.opacity = ''; // CSS handles hover opacity
 });
 
 // --- Mobile Navigation ---

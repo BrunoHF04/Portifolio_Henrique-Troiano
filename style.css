@@ -245,6 +245,10 @@ button {
 }
 
 /* Custom Cursor */
+body, a, button, .glass-card, input, textarea {
+    cursor: none !important;
+}
+
 .cursor-dot, .cursor-glow {
     position: fixed;
     top: 0; left: 0;
@@ -252,13 +256,13 @@ button {
     border-radius: 50%;
     z-index: 10000;
     transform: translate(-50%, -50%);
-    transition: transform 0.1s ease, width 0.2s, height 0.2s;
 }
 
 .cursor-dot {
     width: 8px;
     height: 8px;
     background: var(--accent-color);
+    transition: transform 0.1s ease;
 }
 
 .cursor-glow {
@@ -266,7 +270,8 @@ button {
     height: 40px;
     border: 1px solid rgba(59, 130, 246, 0.4);
     background: rgba(59, 130, 246, 0.05);
-    transition: transform 0.2s ease, width 0.2s, height 0.2s, background 0.2s;
+    transition: transform 0.2s ease, width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s, opacity 0.3s;
+    opacity: 0;
 }
 
 /* Cursor Active states modified via JS */
@@ -274,6 +279,7 @@ body.hovering .cursor-glow {
     width: 60px;
     height: 60px;
     background: rgba(59, 130, 246, 0.1);
+    opacity: 1;
 }
 
 /* ==========================
