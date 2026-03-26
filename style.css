@@ -989,6 +989,23 @@ body.light-theme .lang-switch {
     background: rgba(0,0,0,0.05);
 }
 
+body.light-theme .float-card {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .glass-tag, body.light-theme .badge {
+    background: rgba(0, 0, 0, 0.03);
+}
+body.light-theme .glass-tag:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.light-theme .timeline-line {
+    background: linear-gradient(to bottom, var(--accent-color), rgba(0, 0, 0, 0.05));
+}
+
 /* ==========================
    Back to Top Button
    ========================== */
