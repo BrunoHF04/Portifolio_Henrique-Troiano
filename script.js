@@ -229,9 +229,9 @@ const cursorGlow = document.querySelector('.cursor-glow');
 const links = document.querySelectorAll('a, button, .glass-card');
 
 document.addEventListener('mousemove', (e) => {
-    cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
     setTimeout(() => {
-        cursorGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        cursorGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
     }, 50);
 });
 

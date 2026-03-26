@@ -947,3 +947,75 @@ body.hovering .cursor-glow {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================
+   Print Friendly Layout
+   ========================== */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        -webkit-text-fill-color: initial !important;
+    }
+    body {
+        background: #fff !important;
+    }
+    .cursor-dot, .cursor-glow, .noise-overlay, .navbar, .mobile-menu, #back-to-top, .footer, .cta-actions {
+        display: none !important;
+    }
+    .hero {
+        min-height: auto !important;
+        padding-top: 0 !important;
+    }
+    .hero::after {
+        display: none !important;
+    }
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .glass, .glass-card, .bg-alt, .glass-tag {
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 1.5rem !important;
+        backdrop-filter: none !important;
+    }
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    .image-wrapper {
+        display: none !important;
+    }
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+        color: #000 !important;
+    }
+    h1, h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .timeline-item {
+        page-break-inside: avoid;
+    }
+    .timeline-line {
+        background: #333 !important;
+    }
+    .timeline-dot {
+        border-color: #333 !important;
+    }
+    .metrics-grid, .about-grid, .education-cards {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .metric-card, .skill-tag, .edu-card {
+        margin-bottom: 0.5rem;
+        page-break-inside: avoid;
+        text-align: left;
+        padding: 0.5rem 0 !important;
+    }
+}
