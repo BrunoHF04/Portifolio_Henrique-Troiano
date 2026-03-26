@@ -58,7 +58,18 @@ const translations = {
         
         "contact-title": "Pronto para elevar a satisfação dos seus clientes?",
         "contact-desc": "Vamos conversar sobre como estratégias eficientes de CS/CX podem impulsionar seus resultados de negócio hoje.",
-        "contact-btn": "<i class=\"ph-fill ph-envelope-simple\"></i> Fale Comigo",
+        "contact-email": "<i class=\"ph-fill ph-envelope-simple\"></i> Fale Comigo",
+        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> Salvar Contato",
+        
+        "metrics-tag": "Impacto",
+        "metrics-title": "Números & Resultados",
+        "metrics-desc": "O reflexo de um trabalho focado genuinamente no cliente.",
+        "metric-1-title": "CSAT Mantido (Exemplo)",
+        "metric-1-desc": "Índice consistente de satisfação do cliente em resoluções de tickets e suporte.",
+        "metric-2-title": "SLA Cumprido (Exemplo)",
+        "metric-2-desc": "Gestão eficiente do tempo de resposta e priorização no Customer Success.",
+        "metric-3-title": "Customer Health (Exemplo)",
+        "metric-3-desc": "Ações preventivas no relacionamento que diminuem ruídos e aumentam fidelização.",
         
         "footer-copy": "&copy; 2026 Henrique Troiano. Todos os direitos reservados."
     },
@@ -120,8 +131,19 @@ const translations = {
         
         "contact-title": "Ready to elevate your customers' satisfaction?",
         "contact-desc": "Let's talk about how efficient CS/CX strategies can drive your business results today.",
-        "contact-btn": "<i class=\"ph-fill ph-envelope-simple\"></i> Contact Me",
+        "contact-email": "<i class=\"ph-fill ph-envelope-simple\"></i> Email Me",
+        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> Save Contact",
         
+        "metrics-tag": "Impact",
+        "metrics-title": "Numbers & Results",
+        "metrics-desc": "The reflection of genuinely customer-focused work.",
+        "metric-1-title": "CSAT Maintained (Example)",
+        "metric-1-desc": "Consistent customer satisfaction index in ticket resolutions and support.",
+        "metric-2-title": "SLA Achieved (Example)",
+        "metric-2-desc": "Efficient management of response times and prioritization in Customer Success.",
+        "metric-3-title": "Customer Health (Example)",
+        "metric-3-desc": "Preventive actions in relationship management that reduce friction and increase loyalty.",
+
         "footer-copy": "&copy; 2026 Henrique Troiano. All rights reserved."
     }
 };
@@ -284,5 +306,30 @@ if (backToTopBtn) {
 
     backToTopBtn.addEventListener('click', () => {
         lenis.scrollTo(0, { duration: 1.2 });
+    });
+}
+
+// --- VCard Generation ---
+const vcardBtn = document.getElementById('vcard-btn');
+if (vcardBtn) {
+    vcardBtn.addEventListener('click', () => {
+        const vcardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Henrique Troiano
+TITLE:Especialista CS & CX
+ORG:Siplan
+EMAIL;TYPE=INTERNET:henrique@exemplo.com
+URL:https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/
+END:VCARD`;
+
+        const blob = new Blob([vcardData], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Henrique_Troiano.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     });
 }
