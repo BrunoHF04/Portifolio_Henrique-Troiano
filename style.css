@@ -71,13 +71,14 @@ html {
     background: rgba(255, 255, 255, 0.3);
 }
 
-body.dark-theme {
+body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -940,6 +941,11 @@ body.light-theme .glass-card,
 body.light-theme .glass-tag, 
 body.light-theme .glass {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .navbar.glass {
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 body.light-theme .cta-box {
