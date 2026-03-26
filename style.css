@@ -888,7 +888,7 @@ body.hovering .cursor-dot {
 }
 
 .mobile-only-lang, .mobile-only-theme {
-    display: none;
+    display: none !important;
 }
 
 .theme-toggle-btn {
@@ -911,10 +911,10 @@ body.hovering .cursor-dot {
 
 @media (max-width: 992px) {
     .nav-links .lang-switch, .nav-links .theme-toggle-btn {
-        display: none;
+        display: none !important;
     }
     .mobile-only-lang, .mobile-only-theme {
-        display: inline-flex;
+        display: inline-flex !important;
         margin: 0;
     }
 }
