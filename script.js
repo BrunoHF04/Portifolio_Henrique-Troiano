@@ -10,6 +10,7 @@ const translations = {
         "hero-title": "Elevando o <span class=\"gradient-text\">Customer Success</span> <br/> & <span class=\"gradient-text\">Experience</span>",
         "hero-subtitle": "Olá, sou o <strong>Henrique Troiano</strong>. Especialista em construir jornadas ágeis, transformar atendimento em fidelização e impulsionar o sucesso do cliente.",
         "hero-cta-talk": "<i class=\"ph-fill ph-paper-plane-right\"></i> Vamos Conversar",
+        "hero-cta-whatsapp": "<i class=\"ph-fill ph-whatsapp-logo\"></i> WhatsApp",
         "hero-cta-linkedin": "<i class=\"ph-fill ph-linkedin-logo\"></i> LinkedIn",
         "stat-title": "Satisfação",
         "stat-value": "Foco no Cliente",
@@ -58,8 +59,8 @@ const translations = {
         
         "contact-title": "Pronto para elevar a satisfação dos seus clientes?",
         "contact-desc": "Vamos conversar sobre como estratégias eficientes de CS/CX podem impulsionar seus resultados de negócio hoje.",
-        "contact-email": "<i class=\"ph-fill ph-envelope-simple\"></i> Fale Comigo",
-        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> Salvar Contato",
+        "contact-whatsapp": "<i class=\"ph-fill ph-whatsapp-logo\"></i> Chamar no WhatsApp",
+        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> VCard",
         
         "metrics-tag": "Impacto",
         "metrics-title": "Números & Resultados",
@@ -83,6 +84,7 @@ const translations = {
         "hero-title": "Elevating <span class=\"gradient-text\">Customer Success</span> <br/> & <span class=\"gradient-text\">Experience</span>",
         "hero-subtitle": "Hi, I'm <strong>Henrique Troiano</strong>. A specialist in building agile journeys, transforming support into customer loyalty, and driving customer success.",
         "hero-cta-talk": "<i class=\"ph-fill ph-paper-plane-right\"></i> Let's Talk",
+        "hero-cta-whatsapp": "<i class=\"ph-fill ph-whatsapp-logo\"></i> WhatsApp",
         "hero-cta-linkedin": "<i class=\"ph-fill ph-linkedin-logo\"></i> LinkedIn",
         "stat-title": "Satisfaction",
         "stat-value": "Customer Focus",
@@ -131,8 +133,8 @@ const translations = {
         
         "contact-title": "Ready to elevate your customers' satisfaction?",
         "contact-desc": "Let's talk about how efficient CS/CX strategies can drive your business results today.",
-        "contact-email": "<i class=\"ph-fill ph-envelope-simple\"></i> Email Me",
-        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> Save Contact",
+        "contact-whatsapp": "<i class=\"ph-fill ph-whatsapp-logo\"></i> Chat on WhatsApp",
+        "contact-vcard": "<i class=\"ph-fill ph-address-book\"></i> VCard",
         
         "metrics-tag": "Impact",
         "metrics-title": "Numbers & Results",
