@@ -262,7 +262,7 @@ body, a, button, .glass-card, input, textarea {
     width: 8px;
     height: 8px;
     background: var(--accent-color);
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, opacity 0.2s ease;
 }
 
 .cursor-glow {
@@ -280,6 +280,10 @@ body.hovering .cursor-glow {
     height: 60px;
     background: rgba(59, 130, 246, 0.1);
     opacity: 1;
+}
+
+body.hovering .cursor-dot {
+    opacity: 0 !important;
 }
 
 /* ==========================
