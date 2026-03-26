@@ -335,3 +335,41 @@ END:VCARD`;
         URL.revokeObjectURL(url);
     });
 }
+
+// --- Theme Toggle Logic ---
+const themeToggles = document.querySelectorAll('.theme-toggle-btn');
+const themeIcons = document.querySelectorAll('.theme-icon');
+
+function setTheme(isLight) {
+    if (isLight) {
+        document.body.classList.add('light-theme');
+        document.body.classList.remove('dark-theme');
+        themeIcons.forEach(icon => {
+            icon.classList.remove('ph-moon');
+            icon.classList.add('ph-sun');
+        });
+        localStorage.setItem('portfolioTheme', 'light');
+    } else {
+        document.body.classList.add('dark-theme');
+        document.body.classList.remove('light-theme');
+        themeIcons.forEach(icon => {
+            icon.classList.remove('ph-sun');
+            icon.classList.add('ph-moon');
+        });
+        localStorage.setItem('portfolioTheme', 'dark');
+    }
+}
+
+const savedTheme = localStorage.getItem('portfolioTheme');
+if (savedTheme === 'light') {
+    setTheme(true);
+} else {
+    setTheme(false); // Default dark
+}
+
+themeToggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const isLight = !document.body.classList.contains('light-theme');
+        setTheme(isLight);
+    });
+});
