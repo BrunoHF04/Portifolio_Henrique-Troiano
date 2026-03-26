@@ -22,15 +22,27 @@
         <div class="nav-container">
             <a href="#" class="logo">H<span class="gradient-text">T</span>.</a>
             <div class="nav-links">
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#skills" class="nav-link">Competências</a>
-                <a href="#contact" class="btn-primary-outline btn-sm">Contato</a>
+                <a href="#about" class="nav-link" data-i18n="nav-about">Sobre</a>
+                <a href="#experience" class="nav-link" data-i18n="nav-exp">Experiência</a>
+                <a href="#skills" class="nav-link" data-i18n="nav-skills">Competências</a>
+                <a href="#contact" class="btn-primary-outline btn-sm" data-i18n="nav-contact">Contato</a>
+                
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="pt">PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </div>
-            <!-- Mobile Menu Toggle -->
-            <button class="menu-toggle" aria-label="Menu">
-                <i class="ph ph-list"></i>
-            </button>
+            
+            <div style="display:flex; align-items:center; gap: 1rem;">
+                <div class="lang-switch mobile-only-lang">
+                    <button class="lang-btn active" data-lang="pt">PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" aria-label="Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -40,10 +52,10 @@
             <i class="ph ph-x"></i>
         </button>
         <div class="mobile-nav-items">
-            <a href="#about" class="mobile-link">Sobre</a>
-            <a href="#experience" class="mobile-link">Experiência</a>
-            <a href="#skills" class="mobile-link">Competências</a>
-            <a href="#contact" class="mobile-link btn-primary">Contato</a>
+            <a href="#about" class="mobile-link" data-i18n="nav-about">Sobre</a>
+            <a href="#experience" class="mobile-link" data-i18n="nav-exp">Experiência</a>
+            <a href="#skills" class="mobile-link" data-i18n="nav-skills">Competências</a>
+            <a href="#contact" class="mobile-link btn-primary" data-i18n="nav-contact">Contato</a>
         </div>
     </div>
 
@@ -52,24 +64,22 @@
             <div class="container hero-content">
                 <div class="hero-text reveal">
                     <div class="badge-wrapper">
-                        <span class="badge">
+                        <span class="badge" data-i18n="hero-badge">
                             <span class="pulse-dot"></span> CS & CX Specialist
                         </span>
                     </div>
-                    <h1 class="hero-title">
-                        Elevando o <span class="gradient-text">Customer Success</span> & <span class="gradient-text">Experience</span>
+                    <h1 class="hero-title" data-i18n="hero-title">
+                        Elevando o <span class="gradient-text">Customer Success</span> <br/> & <span class="gradient-text">Experience</span>
                     </h1>
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-i18n="hero-subtitle">
                         Olá, sou o <strong>Henrique Troiano</strong>. Especialista em construir jornadas ágeis, transformar atendimento em fidelização e impulsionar o sucesso do cliente.
                     </p>
                     <div class="hero-cta">
-                        <a href="#contact" class="btn-primary">
-                            <i class="ph-fill ph-paper-plane-right"></i>
-                            Vamos Conversar
+                        <a href="#contact" class="btn-primary" data-i18n="hero-cta-talk">
+                            <i class="ph-fill ph-paper-plane-right"></i> Vamos Conversar
                         </a>
-                        <a href="https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                            <i class="ph-fill ph-linkedin-logo"></i>
-                            LinkedIn
+                        <a href="https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="hero-cta-linkedin">
+                            <i class="ph-fill ph-linkedin-logo"></i> LinkedIn
                         </a>
                     </div>
                 </div>
@@ -82,8 +92,8 @@
                         <div class="float-card glass-card">
                             <i class="ph-duotone ph-star"></i>
                             <div>
-                                <span class="card-title">Satisfação</span>
-                                <span class="card-value">Foco no Cliente</span>
+                                <span class="card-title" data-i18n="stat-title">Satisfação</span>
+                                <span class="card-value" data-i18n="stat-value">Foco no Cliente</span>
                             </div>
                         </div>
                     </div>
@@ -95,25 +105,25 @@
         <section id="about" class="about section section-padding bg-alt">
             <div class="container">
                 <div class="section-header reveal text-center">
-                    <span class="section-subtitle">Propósito</span>
-                    <h2>Sobre Mim</h2>
-                    <p>Uma breve visão sobre minha jornada com o cliente.</p>
+                    <span class="section-subtitle" data-i18n="about-tag">Propósito</span>
+                    <h2 data-i18n="about-title">Sobre Mim</h2>
+                    <p data-i18n="about-desc">Uma breve visão sobre minha jornada com o cliente.</p>
                 </div>
                 <div class="about-grid">
                     <div class="about-card glass-card reveal">
                         <div class="icon-box"><i class="ph-duotone ph-strategy"></i></div>
-                        <h3>Visão Estratégica</h3>
-                        <p>Atuo na intersecção entre CX e CS, com foco em otimizar jornadas e garantir que cada cliente extraia o máximo valor das soluções oferecidas.</p>
+                        <h3 data-i18n="about-1-title">Visão Estratégica</h3>
+                        <p data-i18n="about-1-desc">Atuo na intersecção entre CX e CS, com foco em otimizar jornadas e garantir que cada cliente extraia o máximo valor das soluções oferecidas.</p>
                     </div>
                     <div class="about-card glass-card reveal delay-1">
                         <div class="icon-box"><i class="ph-duotone ph-users-three"></i></div>
-                        <h3>Foco no Usuário</h3>
-                        <p>Meu objetivo é reduzir a complexidade e aumentar a satisfação, implementando melhorias baseadas em dados e feedbacks reais.</p>
+                        <h3 data-i18n="about-2-title">Foco no Usuário</h3>
+                        <p data-i18n="about-2-desc">Meu objetivo é reduzir a complexidade e aumentar a satisfação, implementando melhorias baseadas em dados e feedbacks reais.</p>
                     </div>
                     <div class="about-card glass-card reveal delay-2">
                         <div class="icon-box"><i class="ph-duotone ph-chart-line-up"></i></div>
-                        <h3>Resultados Reais</h3>
-                        <p>O verdadeiro sucesso do cliente reflete diretamente no crescimento sustentável do negócio através de retenção e suporte proativo.</p>
+                        <h3 data-i18n="about-3-title">Resultados Reais</h3>
+                        <p data-i18n="about-3-desc">O verdadeiro sucesso do cliente reflete diretamente no crescimento sustentável do negócio através de retenção e suporte proativo.</p>
                     </div>
                 </div>
             </div>
@@ -123,9 +133,9 @@
         <section id="experience" class="experience section section-padding">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-subtitle">Trajetória</span>
-                    <h2>Experiência Profissional</h2>
-                    <p>Minha evolução construindo sucesso e melhorando experiências na Siplan e além.</p>
+                    <span class="section-subtitle" data-i18n="exp-tag">Trajetória</span>
+                    <h2 data-i18n="exp-title">Experiência Profissional</h2>
+                    <p data-i18n="exp-desc">Minha evolução construindo sucesso e melhorando experiências na Siplan e além.</p>
                 </div>
                 
                 <div class="timeline">
@@ -134,48 +144,48 @@
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Maio 2025 – Presente</span>
+                            <span class="timeline-date" data-i18n="exp-1-date">Maio 2025 – Presente</span>
                             <div class="timeline-header">
-                                <h3>Analista de Customer Experience Pleno</h3>
+                                <h3 data-i18n="exp-1-title">Analista de Customer Experience Pleno</h3>
                                 <h4>Siplan</h4>
                             </div>
-                            <p>Otimização avançada da jornada do cliente, implementação de melhorias estratégicas e gestão resolutiva de feedbacks com suporte consultivo.</p>
+                            <p data-i18n="exp-1-desc">Otimização avançada da jornada do cliente, implementação de melhorias estratégicas e gestão resolutiva de feedbacks com suporte consultivo.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Jan 2023 – Maio 2025</span>
+                            <span class="timeline-date" data-i18n="exp-2-date">Jan 2023 – Maio 2025</span>
                             <div class="timeline-header">
-                                <h3>Analista de Customer Experience Júnior</h3>
+                                <h3 data-i18n="exp-2-title">Analista de Customer Experience Júnior</h3>
                                 <h4>Siplan</h4>
                             </div>
-                            <p>Mapeamento de touchpoints, análise de métricas de satisfação e estruturação de ações preventivas no relacionamento com a base de clientes.</p>
+                            <p data-i18n="exp-2-desc">Mapeamento de touchpoints, análise de métricas de satisfação e estruturação de ações preventivas no relacionamento com a base de clientes.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Abr 2022 – Jan 2023</span>
+                            <span class="timeline-date" data-i18n="exp-3-date">Abr 2022 – Jan 2023</span>
                             <div class="timeline-header">
-                                <h3>Analista de Customer Success Júnior</h3>
+                                <h3 data-i18n="exp-3-title">Analista de Customer Success Júnior</h3>
                                 <h4>Siplan</h4>
                             </div>
-                            <p>Foco na garantia do sucesso do cliente, promoção da adoção integral de plataformas e retenção guiada através da robusta gestão por CRM.</p>
+                            <p data-i18n="exp-3-desc">Foco na garantia do sucesso do cliente, promoção da adoção integral de plataformas e retenção guiada através da robusta gestão por CRM.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item reveal">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content glass-card">
-                            <span class="timeline-date">Out 2020 – Abr 2022</span>
+                            <span class="timeline-date" data-i18n="exp-4-date">Out 2020 – Abr 2022</span>
                             <div class="timeline-header">
-                                <h3>Analista Service Desk Júnior</h3>
+                                <h3 data-i18n="exp-4-title">Analista Service Desk Júnior</h3>
                                 <h4>Siplan</h4>
                             </div>
-                            <p>Criação e manutenção fluida de rotinas de onboarding, otimização da base de conhecimento e resolução de chamados de alto nível.</p>
+                            <p data-i18n="exp-4-desc">Criação e manutenção fluida de rotinas de onboarding, otimização da base de conhecimento e resolução de chamados de alto nível.</p>
                         </div>
                     </div>
                 </div>
@@ -186,41 +196,41 @@
         <section id="skills" class="skills section section-padding bg-alt">
              <div class="container">
                 <div class="section-header reveal text-center">
-                    <span class="section-subtitle">Atributos</span>
-                    <h2>Competências & Formação</h2>
-                    <p>Dominando as ferramentas e conhecimentos para o sucesso centrado no cliente.</p>
+                    <span class="section-subtitle" data-i18n="skills-tag">Atributos</span>
+                    <h2 data-i18n="skills-title">Competências & Formação</h2>
+                    <p data-i18n="skills-desc">Dominando as ferramentas e conhecimentos para o sucesso centrado no cliente.</p>
                 </div>
                 
                 <div class="skills-wrapper">
                     <div class="skills-grid reveal">
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-target"></i> Customer Success</div>
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-heart"></i> Customer Experience</div>
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-database"></i> CRM Management</div>
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-star"></i> Liderança (Atendimento)</div>
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-kanban"></i> Otimização Processos</div>
-                        <div class="skill-tag glass-tag"><i class="ph-fill ph-lightbulb"></i> Suporte Estratégico</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-1"><i class="ph-fill ph-target"></i> Customer Success</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-2"><i class="ph-fill ph-heart"></i> Customer Experience</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-3"><i class="ph-fill ph-database"></i> CRM Management</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-4"><i class="ph-fill ph-star"></i> Liderança (Atendimento)</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-5"><i class="ph-fill ph-kanban"></i> Otimização Processos</div>
+                        <div class="skill-tag glass-tag" data-i18n="skill-6"><i class="ph-fill ph-lightbulb"></i> Suporte Estratégico</div>
                     </div>
                     
                     <div class="education-cards reveal delay-1">
                         <div class="edu-card glass-card">
                             <div class="edu-icon"><i class="ph-duotone ph-graduation-cap"></i></div>
                             <div class="edu-info">
-                                <h4>Pós-Graduação Gestão de Produção e Qualidade</h4>
-                                <span>Faculdade Metropolitana &bull; 2021 – 2022</span>
+                                <h4 data-i18n="edu-1-title">Pós-Graduação Gestão de Produção e Qualidade</h4>
+                                <span data-i18n="edu-1-org">Faculdade Metropolitana &bull; 2021 – 2022</span>
                             </div>
                         </div>
                         <div class="edu-card glass-card">
                             <div class="edu-icon"><i class="ph-duotone ph-student"></i></div>
                             <div class="edu-info">
-                                <h4>Graduação em Business Administration</h4>
-                                <span>Uniseb &bull; 2008 – 2012</span>
+                                <h4 data-i18n="edu-2-title">Graduação em Business Administration</h4>
+                                <span data-i18n="edu-2-org">Uniseb &bull; 2008 – 2012</span>
                             </div>
                         </div>
                         <div class="edu-card glass-card highlight-card">
                             <div class="edu-icon"><i class="ph-duotone ph-certificate"></i></div>
                             <div class="edu-info">
-                                <h4>IA Fundamentos - Data Science</h4>
-                                <span>Data Science Academy &bull; 2021</span>
+                                <h4 data-i18n="edu-3-title">IA Fundamentos - Data Science</h4>
+                                <span data-i18n="edu-3-org">Data Science Academy &bull; 2021</span>
                             </div>
                         </div>
                     </div>
@@ -233,15 +243,14 @@
             <div class="container">
                 <div class="cta-box glass reveal">
                     <div class="cta-content">
-                        <h2>Pronto para elevar a satisfação dos seus clientes?</h2>
-                        <p>Vamos conversar sobre como estratégias eficientes de CS/CX podem impulsionar seus resultados de negócio hoje.</p>
+                        <h2 data-i18n="contact-title">Pronto para elevar a satisfação dos seus clientes?</h2>
+                        <p data-i18n="contact-desc">Vamos conversar sobre como estratégias eficientes de CS/CX podem impulsionar seus resultados de negócio hoje.</p>
                     </div>
                     <div class="cta-actions">
-                        <!-- We drop a placeholder mailto since we don't have his email -->
-                        <a href="mailto:henrique@exemplo.com" class="btn-primary btn-large">
+                        <a href="mailto:henrique@exemplo.com" class="btn-primary btn-large" data-i18n="contact-btn">
                             <i class="ph-fill ph-envelope-simple"></i> Fale Comigo
                         </a>
-                        <a href="https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-large">
+                        <a href="https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-large" data-i18n="hero-cta-linkedin">
                             <i class="ph-fill ph-linkedin-logo"></i> LinkedIn
                         </a>
                     </div>
@@ -253,7 +262,7 @@
     <footer class="footer">
         <div class="container footer-content border-top">
             <div class="footer-logo">H<span class="gradient-text">T</span>.</div>
-            <p>&copy; 2026 Henrique Troiano. Todos os direitos reservados.</p>
+            <p data-i18n="footer-copy">&copy; 2026 Henrique Troiano. Todos os direitos reservados.</p>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/henrique-pizetti-troiano-463396196/" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
             </div>
@@ -261,7 +270,6 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- Lenis Smooth Scroll -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>

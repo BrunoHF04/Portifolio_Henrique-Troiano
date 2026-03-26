@@ -829,3 +829,47 @@ body.hovering .cursor-glow {
         text-align: center;
     }
 }
+
+/* ==========================
+   Language Switcher
+   ========================== */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--radius-full);
+    padding: 0.25rem;
+    border: 1px solid var(--border-light);
+    margin-left: 1rem;
+}
+.lang-btn {
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+.lang-btn:hover {
+    color: var(--text-primary);
+}
+.lang-btn.active {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.mobile-only-lang {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .nav-links .lang-switch {
+        display: none;
+    }
+    .mobile-only-lang {
+        display: inline-flex;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+}
